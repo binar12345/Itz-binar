@@ -1,0 +1,106 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #0f0;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header Styling */
+header {
+    background-color: #000;
+    color: #0f0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hacker-title {
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    font-family: 'Courier New', monospace;
+    margin-top: 10px;
+}
+
+/* Code Snippet Styling */
+.code-snippet {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 800px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+    margin-top: 20px;
+}
+
+.code {
+    white-space: pre-wrap;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.green-text {
+    color: #0f0;
+}
+
+.red-text {
+    color: #f00;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #000;
+    color: #0f0;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 30px;
+    border-top: 1px solid #0f0;
+}
+
+/* Glow Animation for Title */
+@keyframes glow {
+    0% { text-shadow: 0 0 5px #0f0, 0 0 10px #0f0, 0 0 20px #0f0, 0 0 40px #0f0; }
+    100% { text-shadow: 0 0 5px #0f0, 0 0 10px #0f0, 0 0 20px #0f0, 0 0 40px #0f0; }
+}
+
+.hacker-title {
+    animation: glow 1.5s infinite alternate;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hacker-title {
+        font-size: 3rem;
+    }
+    .code {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hacker-title {
+        font-size: 2.5rem;
+    }
+    .code {
+        font-size: 0.9rem;
+    }
+}
